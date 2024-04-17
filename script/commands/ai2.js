@@ -2,7 +2,7 @@ const axios = require('axios');
 const fs = require('fs');
 
 module.exports.config = {
-    name: "ai2",
+    name: "ai",
     version: "1.0.0",
     hasPermssion: 0,
     credits: "Jonell Magallanes",
@@ -23,10 +23,10 @@ module.exports.run = async function ({ api, event, args }) {
         api.sendMessage("🔍 | AI is searching for your answer. Please wait...", event.threadID, event.messageID);
 
         const response = await axios.get(apiUrl);
-        const { airesponse, image_url } = response.data;
+        const { request_count, airesponse, image_url } = response.data;
 
         if (airesponse) {
-            api.sendMessage(`${airesponse}`, event.threadID);
+            api.sendMessage(`${airesponse}\n\n📝 Request Count: ${request_count}`, event.threadID, event.messageID);
 
             if (image_url) {
                 const imagePath = './image.jpg';
@@ -42,6 +42,6 @@ module.exports.run = async function ({ api, event, args }) {
         }
     } catch (error) {
         console.error(error);
-        api.sendMessage("An error occurred while processing your request.", event.threadID);
+        api.sendMessage("🔨 | An error occurred while processing your request from API...", event.threadID);
     }
 };
