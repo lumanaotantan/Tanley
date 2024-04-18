@@ -5,10 +5,9 @@ const spamInterval = 70000;
 module.exports.config = {
   name: "spamleave",
   version: "1.0.0",
-  hasPermission: 0,
+  hasPermission: 1,
   credits: "Jonell Magallanes",
   description: "Automatically detect and act on spam",
-  usePrefix: false,
   commandCategory: "admin",
   usages: "",
   cooldowns: 5,
@@ -16,11 +15,11 @@ module.exports.config = {
 
 module.exports.handleEvent = function({ api, event }) {
   const { threadID, messageID, senderID } = event;
-
+  
   if (!messageCounts[threadID]) {
     messageCounts[threadID] = {};
   }
-
+  
   if (!messageCounts[threadID][senderID]) {
     messageCounts[threadID][senderID] = {
       count: 1,
