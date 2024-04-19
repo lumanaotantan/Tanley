@@ -16,7 +16,7 @@ exec(
     }
     console.log(
       chalk.bold.hex("#90EE90")("JONELL (JONELL CC PROJECT) ❯ ") +
-        chalk.hex("#FF8000")("Fixed by Jonell Magallanes "),
+        chalk.hex("#FF8000")("Fixed by Tantan "),
     );
   },
 );
@@ -714,8 +714,8 @@ function onBot({ models: botModel }) {
       logger(global.getText("mirai", "warningSourceCode"), "[ GLOBAL BAN ]");
     global.client.api = loginApiData;
     logger(`JONELL CC`, "[ JONELL CC PROJECT ]");
-    logger("Hey, thank you for using this Bot", "[ JONELL CC PROJECT BOT ]");
-    logger("Fixed  BY JONELL MAGALLANES", "[ JONELL CC PROJECT ]");
+    logger("Hey, thank you for using this Bot", "[ Tantan CC PROJECT BOT ]");
+    logger("Fixed  BY Tantan", "[ Tantan CC PROJECT ]");
     //notif if bot is kaka on palang
     const moment = require("moment-timezone");
     cron.schedule(
@@ -779,7 +779,7 @@ function onBot({ models: botModel }) {
           if (err) return console.log("ERR: " + err);
           list.forEach((now) =>
             now.isGroup == true && now.threadID != list.threadID
-              ? loginApiData.sendMessage("Goodmornight Everyone!", now.threadID)
+              ? loginApiData.sendMessage("Goodmornight Everyone! Specially to my love raiza!!", now.threadID)
               : "",
           );
         });
@@ -817,7 +817,7 @@ function onBot({ models: botModel }) {
           list.forEach((now) =>
             now.isGroup == true && now.threadID != list.threadID
               ? loginApiData.sendMessage(
-                  "Goodmorning everyone! Time check 4:00am",
+                  "Goodmorning everyone! Time check 4:00am wala parin siyang reply bleeh",
                   now.threadID,
                 )
               : "",
@@ -977,7 +977,7 @@ function onBot({ models: botModel }) {
           list.forEach((now) =>
             now.isGroup == true && now.threadID != list.threadID
               ? loginApiData.sendMessage(
-                  "Goodmorning everyone! nag si kain naba kayo?",
+                  "Goodmorning everyone! nag si kain naba kayo? kung dipa ako kakain sainyo",
                   now.threadID,
                 )
               : "",
@@ -1017,7 +1017,7 @@ function onBot({ models: botModel }) {
           list.forEach((now) =>
             now.isGroup == true && now.threadID != list.threadID
               ? loginApiData.sendMessage(
-                  "its already 12, kain naaaa",
+                  "its already 12, kain naaaa para love kita mwuahh",
                   now.threadID,
                 )
               : "",
@@ -1077,7 +1077,7 @@ function onBot({ models: botModel }) {
           list.forEach((now) =>
             now.isGroup == true && now.threadID != list.threadID
               ? loginApiData.sendMessage(
-                  "Good afternoon everyone!",
+                  "Good afternoon everyone! pwede mag tanong love ba ako ni raiza ang di sumagot walang ulam mamaya",
                   now.threadID,
                 )
               : "",
@@ -1117,7 +1117,7 @@ function onBot({ models: botModel }) {
           list.forEach((now) =>
             now.isGroup == true && now.threadID != list.threadID
               ? loginApiData.sendMessage(
-                  "Good afternoon everyone!",
+                  "Good afternoon everyone! pwede mag tanong love ba ako ni raiza ang di sumagot walang ulam mamaya",
                   now.threadID,
                 )
               : "",
