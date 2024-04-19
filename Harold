@@ -1,12 +1,12 @@
 module.exports.config = {
-  name: "harold",
+  name: "Tantan",
   version: "1.0.0",
   hasPermission: 0,
-  description: "Harold bot that can download facebook videos, sing, search image, search lyrics and more..",
+  description: "Tanley bot that can download facebook videos, sing, search image, search lyrics and more..",
   usePrefix: false,
-  credits: "Deku and Modified by Jonell Magallanes(botpack)",
+  credits: "labi ni raiza and Modified by Tantan(chatbot)",
   usages: "[help]",
-  commandCategory: "Harold Hutchins",
+  commandCategory: "Tanley",
   cooldowns: 10,
 };
 const axios = require("axios"),
@@ -29,10 +29,10 @@ const { threadID, messageID, body } = event;
   const rand = ["Hi user if you don't know how to use me just type <harold help>","Hey There user I'm Harold Hutchins Bot how can I assist you today? 😊", "Hello there user can I sing for you? 🥰", "Hello There user did you know that I can sing, download facebook videos, search image and more...", "Hello There user I'm Harold Hutchins Bot Modified By Jonell Magallanes and the owner is Deku."];
   const rand1 = rand[Math.floor(Math.random() * rand.length)];
   if (txt.toLowerCase() == "help"){
-    const message = `•——[HAROLD HUTCHINS BOT]——•
+    const message = `•——[TANLEY BOT]——•
 THESE ARE THE THINGS I CAN DO AS A BOT.
 
-•HAROLD HUTCHINS CAN SING SONGS.
+•Tanley CAN SING SONGS.
 
 Just type <harold can you sing (title of song)> or <midoriya sing (title of song)> as long as there is the word sing and the title of the song, it can automatically detect it
 
@@ -73,8 +73,8 @@ Do you have any questions? just contact the admin of bot type <(prefix)admin lis
 if (!txt) return api.sendMessage(rand1, threadID, messageID);
  if (txt.toLowerCase().startsWith("thank you") || txt.toLowerCase().startsWith("thank")) return api.sendMessage("You're welcome user 🤗", threadID, messageID);
   if (txt.toLowerCase() == "hi" || txt.toLowerCase() == "hello" || txt.toLowerCase() == "hey" || txt.toLowerCase() == "yo" || txt.toLowerCase() == "hai") return api.sendMessage(rand1, threadID, messageID);
-  if (txt.toLowerCase().includes("who created you") || txt.toLowerCase().includes("who's your master") || txt.toLowerCase().includes("who create you") || txt.toLowerCase().includes("who's your creator")) return api.sendMessage("I'm Harold Hutchins Modified by Jonell Magallanes and original this code by Deku.", event.threadID, event.messageID);
-  if (txt.toLowerCase().includes("who is Jonell Magallanes") || txt.toLowerCase().includes("who is Jonell")) return api.sendMessage("My Bot Admin", threadID, messageID);
+  if (txt.toLowerCase().includes("who created you") || txt.toLowerCase().includes("who's your master") || txt.toLowerCase().includes("who create you") || txt.toLowerCase().includes("who's your creator")) return api.sendMessage("I'm Harold Hutchins Modified by Tantan and original this code by tanley.", event.threadID, event.messageID);
+  if (txt.toLowerCase().includes("who is Tantan") || txt.toLowerCase().includes("who is Tantan")) return api.sendMessage("My Bot Admin", threadID, messageID);
 if (txt.startsWith("can you download this facebook video") || txt.includes("facebook video") || txt.includes("https://facebook.com") || txt.includes("https://www.facebook.com/") || txt.toLowerCase().includes("fb video")){
   api.sendMessage("Sure user give me a second to download the video 😊.", threadID, messageID);
   const regex = /https:\/\/www\.facebook\.com\/\S+/;
