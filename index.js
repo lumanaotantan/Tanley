@@ -81,12 +81,12 @@ let botStartTime = Date.now();
 async function getBotInformation() {
   return {
     owner: {
-      name: config.BOTOWNER,
-      uid: config.ADMINUID,
+      name: config.Tantan,
+      uid: config.100084553454309,
     },
     bot: {
-      name: config.BOTNAME,
-      uid: config.ADMINUID,
+      name: config.Tanley,
+      uid: config.100084553454309,
       fmd: config.FCA,
       repl: config.REPL,
       lang: config.language,
