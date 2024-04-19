@@ -15,7 +15,7 @@ exec(
       return;
     }
     console.log(
-      chalk.bold.hex("#90EE90")("JONELL (JONELL CC PROJECT) ❯ ") +
+      chalk.bold.hex("#90EE90")("TANTAN (TANTAN CC PROJECT) ❯ ") +
         chalk.hex("#FF8000")("Fixed by Tantan "),
     );
   },
@@ -45,7 +45,7 @@ const axios = require("axios");
 const listPackage = JSON.parse(readFileSync("./package.json")).dependencies;
 const listbuiltinModules = require("module").builtinModules;
 console.log(
-  chalk.bold.hex("#FF8000").bold("[ JONELL (JONELL CC PROJECT) ] » ") +
+  chalk.bold.hex("#FF8000").bold("[ TANTAN (TANTAN CC PROJECT) ] » ") +
     chalk.bold.hex("#90EE90").bold("Deploying The All Variables..."),
 );
 
