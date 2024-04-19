@@ -21,16 +21,16 @@ module.exports = (data, option) => {
 module.exports.loader = (data, option) => {
     switch (option) {
         case "success":
-            console.log(chalk.bold.hex("#90EE90")(gradientBold('[ JONELL CC ] ❯ \n') + data));
+            console.log(chalk.bold.hex("#90EE90")(gradientBold('[ Tantan CC ] ❯ \n') + data));
             break;
         case "warn":
-            console.log(chalk.bold.hex("#FFA500")(gradientBold('[ JONELL CC ] ❯ \n') + data));
+            console.log(chalk.bold.hex("#FFA500")(gradientBold('[ Tantan CC ] ❯ \n') + data));
             break;
         case "error":
-            console.log(chalk.bold.hex("#FF0000")(gradientBold('[ JONELL CC ] ❯ \n') + data));
+            console.log(chalk.bold.hex("#FF0000")(gradientBold('[ Tantan CC ] ❯ \n') + data));
             break;
         default:
-            var gradText = gradientBold(`[ JONELL CC ] ❯ \n${data}`);
+            var gradText = gradientBold(`[ Tantan CC ] ❯ \n${data}`);
             console.log(gradText);
             break;
     }
